@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input[type="text"], input[type="file"], .gender-options, .age-options, .jewellery-options, .budget-options, .outfit-match-options {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gender-options, .age-options, .jewellery-options, .budget-options, .outfit-match-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] + label {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.help-icon {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #007bff;
+}
+
+.help-icon:hover::after {
+    content: attr(data-note);
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    margin-top: 10px;
+}
